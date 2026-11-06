@@ -1,0 +1,34 @@
+@font-face{
+	font-family:'melted_monster';
+	src:url(../melted_monster/melted_monster.ttf);
+	font-weight:bold;
+	font-style:bold;
+}
+body {
+	background-image:url("../img/fondo1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:left center;
+	text-align:center
+}
+p,h1 {
+	font-family:melted_monster;
+	color:#9C0001;
+	font-size:4em
+}
+h1 {
+	font-size:6em
+}
+a:link {
+	color:#9C0001
+}
+a:visited {
+	color:red
+}
+.botonderecha {
+	width:10%;
+	float:right
+}
+a:hover {
+	color:purple
+}
