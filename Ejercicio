@@ -1,0 +1,27 @@
+## Proyecto posterior — Máximo tres integrantes
+
+
+
+Crear una web multipágina de temática libre manteniendo esta estructura: portada, menú desplegable, un mínimo de diez páginas interiores reales y un formulario HTML. El CSS debe ser externo. Incluir hover, sombra, una animación corta, un parallax sencillo y diseño responsive. Cada integrante debe poder explicar qué clases, layouts y efectos ha utilizado.
+
+
+
+### Rúbrica orientativa (10 puntos)
+
+
+
+- HTML semántico, rutas y navegación multipágina: 1 punto.
+
+- CSS externo y estructura clara de archivos: 1 punto.
+
+- Maquetación Flexbox y Grid: 1 punto.
+
+- Hover, sombras y transiciones: 1 punto.
+
+- Animaciones: 1 punto.
+
+- Adaptación responsive y formulario usable: 1 punto.
+
+- Legibilidad, comentarios y coherencia visual: 1 punto.
+
+-Defensa del proyecto: 3 puntos.
