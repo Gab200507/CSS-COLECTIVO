@@ -1,8 +1,14 @@
 @font-face{
-	font-family:'melted_monster';
+	font-family:'melted_monster','shark';
 	src:url(../melted_monster/melted_monster.ttf);
 	font-weight:bold;
 	font-style:bold;
+}
+@font-face {
+    font-family: 'shark';
+    src: url(../style/font/shark/shark___.ttf);
+    font-weight: bold;
+    font-size: bold;
 }
 body {
 	background-image:url("../img/fondo1.jpg");
@@ -32,48 +38,26 @@ a:visited {
 a:hover {
 	color:purple
 }
-
-
-@font-face {
-    font-family: 'shark';
-    src: url(../font/shark___.ttf);
-    font-weight: bold;
-    font-size: bold;
-}
-
-
 html {
     scroll-behavior: smooth;
 }
-
-
 *, *::before, *::after { box-sizing: border-box; }
-
-
-
-
 /*  CABECERA  */
 .site-header {
     background-color: rgb(11, 127, 156);
     padding: 20px;
     position: sticky;
 }
-
-
 .site-header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-
 .brand-tittle {
     color: white;
     font-size: 25px;
     font-family: 'shark';
 }
-
-
 /*  MENÚ PRINCIPAL  */
 .nav-list {
     display: flex;
@@ -83,24 +67,16 @@ html {
     margin: 0;
     padding: 0;
 }
-
-
 /*  ENLACES DE MENÚ  */
 .nav-main-link,
 .nav-item > a {
     color: aqua;
     text-decoration: none;
 }
-
-
-
-
 /* CONTENEDOR DEL DESPLEGABLE */
 .nav-dropdown {
     position: relative;
 }
-
-
 /* BOTÓN DESPLEGABLE */
 .nav-desplegable {
     background: none;
@@ -109,8 +85,6 @@ html {
     font-size: 16px;
     cursor: pointer;
 }
-
-
 /* SUBMENÚ */
 .submenu {
     display: none;
@@ -122,8 +96,6 @@ html {
     padding: 10px;
     list-style: none;
 }
-
-
 /* ENLACES DEL SUBMENÚ */
 .submenu a {
     display: block;
@@ -131,15 +103,11 @@ html {
     text-decoration: none;
     padding: 10px;
 }
-
-
 /* MOSTRAR EL SUBMENÚ */
 .nav-dropdown:hover .submenu,
 .nav-dropdown:focus-within .submenu {
     display: block;
 }
-
-
 .container ul li a{
     display: block;
     padding: 10px;
@@ -148,13 +116,9 @@ html {
     color: aqua;
     transition: .1s;
 }
-
-
 .container:hover ul li a {
     color: aqua;
 }
-
-
 .container ul li a:hover {
     color: whitesmoke;
     transform: scale(1.1);
