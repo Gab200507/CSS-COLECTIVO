@@ -62,3 +62,134 @@ td,p{
 p,td{
 	font-size:30px;
 }
+
+
+
+
+@font-face {
+    font-family: 'shark';
+    src: url(../font/shark___.ttf);
+    font-weight: bold;
+    font-size: bold;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+*, *::before, *::after { box-sizing: border-box; }
+
+
+
+
+/*  CABECERA  */
+.site-header {
+    background-color: rgb(11, 127, 156);
+    padding: 20px;
+    position: sticky;
+}
+
+
+.site-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.brand-tittle {
+    color: white;
+    font-size: 25px;
+    font-family: 'shark';
+}
+
+
+/*  MENÚ PRINCIPAL  */
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  ENLACES DE MENÚ  */
+.nav-main-link,
+.nav-item > a {
+    color: aqua;
+    text-decoration: none;
+}
+
+
+
+
+/* CONTENEDOR DEL DESPLEGABLE */
+.nav-dropdown {
+    position: relative;
+}
+
+
+/* BOTÓN DESPLEGABLE */
+.nav-desplegable {
+    background: none;
+    border: none;
+    color: aqua;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* SUBMENÚ */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #082b3a;
+    min-width: 220px;
+    padding: 10px;
+    list-style: none;
+}
+
+
+/* ENLACES DEL SUBMENÚ */
+.submenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* MOSTRAR EL SUBMENÚ */
+.nav-dropdown:hover .submenu,
+.nav-dropdown:focus-within .submenu {
+    display: block;
+}
+
+
+.container ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: aqua;
+    transition: .1s;
+}
+
+
+.container:hover ul li a {
+    color: aqua;
+}
+
+
+.container ul li a:hover {
+    color: whitesmoke;
+    transform: scale(1.1);
+    background: #9C0001;
+    border: 1px solid #9C0001;
+}

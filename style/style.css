@@ -36,7 +36,7 @@ a:hover {
 
 @font-face {
     font-family: 'shark';
-    src: url(../style/font/shark/shark___.ttf);
+    src: url(../font/shark___.ttf);
     font-weight: bold;
     font-size: bold;
 }
