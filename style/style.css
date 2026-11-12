@@ -1,9 +1,14 @@
 @font-face{
 	font-family:'melted_monster','shark';
 	src:url(../melted_monster/melted_monster.ttf);
-    src: url(../style/font/shark/shark___.ttf);
 	font-weight:bold;
 	font-style:bold;
+}
+@font-face {
+    font-family: 'shark';
+    src: url(../style/font/shark/shark___.ttf);
+    font-weight: bold;
+    font-size: bold;
 }
 body {
 	background-image:url("../img/fondo1.jpg");
