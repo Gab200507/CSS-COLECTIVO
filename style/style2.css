@@ -5,20 +5,13 @@
 	font-style:bold;
 }
 
-@font-face {
-    font-family: 'shark';
-    src: url(../font/shark___.ttf);
-    font-weight: bold;
-    font-size: bold;
-}
-
 body{
 	background-image:url("../img/fondo1.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:left center;
 	text-align:center;
-	margin:40px;
+	margin:0px;
 }
 embed{
 	height:59px;
@@ -81,8 +74,6 @@ p,td{
 html {
     scroll-behavior: smooth;
 }
-
-
 *, *::before, *::after { box-sizing: border-box; }
 
 /*  CABECERA  */
@@ -90,6 +81,7 @@ html {
     background-color: rgb(11, 127, 156);
     padding: 20px;
     position: sticky;
+	font-size: 20px;
 }
 
 .site-header-inner {
@@ -97,13 +89,11 @@ html {
     justify-content: space-between;
     align-items: center;
 }
-
 .brand-tittle {
     color: white;
     font-size: 25px;
     font-family: 'shark';
 }
-
 /*  MENÚ PRINCIPAL  */
 .nav-list {
     display: flex;
@@ -113,7 +103,6 @@ html {
     margin: 0;
     padding: 0;
 }
-
 /*  ENLACES DE MENÚ  */
 .nav-main-link,
 .nav-item > a {
@@ -155,8 +144,6 @@ html {
 .nav-dropdown:focus-within .submenu {
     display: block;
 }
-
-
 .container ul li a{
     display: block;
     padding: 10px;
@@ -165,23 +152,20 @@ html {
     color: aqua;
     transition: .1s;
 }
-
-
 .container:hover ul li a {
     color: aqua;
 }
-
-
 .container ul li a:hover {
     color: whitesmoke;
     transform: scale(1.1);
     background: #9C0001;
     border: 1px solid #9C0001;
 }
-
-
 /* MAIN */
-
+.main {
+	padding-right: 60px;
+    padding-left: 60px;
+}
 .tabdatos {
 
 	border-spacing: 10px;
@@ -239,6 +223,90 @@ html {
 	height: 700px;
 	color: #9C0001;
 	background: #3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON MAKO */
+.cardt4 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 450px;
+	color: #9C0001;
+	background: #3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON OCEANICO */
+.cardt5 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 650px;
+	color: #9C0001;
+	background: #3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON TORO */
+.cardt6 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 425px;
+	color: #9C0001;
+	background: #3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON MARTILLO GIGANTE */
+.cardt7 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 475px;
+	color: #9C0001;
+	background:#3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURONES PUNTAS NEGRAS */
+.cardt8 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 445px;
+	color: #9C0001;
+	background:#3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON AZUL */
+.cardt9 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 380px;
+	color: #9C0001;
+	background:#3e7fa5;
+	font-size: 18;
+	text-decoration: none;
+}
+
+/* TIBURON GRIS */
+.cardt10 {
+	flex: 1;
+	padding: 20px;
+	width: 700px;
+	height: 385px;
+	color: #9C0001;
+	background:#3e7fa5;
 	font-size: 18;
 	text-decoration: none;
 }
