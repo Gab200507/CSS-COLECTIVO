@@ -65,15 +65,15 @@ h2{
 	font-size: 3em;
 }
 .botonderecha{
-	width:10%;
-	float:right
+	width:150px;
+	float:right;
 }
 .botoninicio{
-	width:10%
+	width:150px;
 }
 .botonizquierda{
-	width:10%;
-	float:left
+	width:150px;
+	float:left;
 }
 .imginicial{
 	width:80%;
@@ -308,4 +308,9 @@ p,td{
   .scroll {
     animation: none !important;
   }
+}
+@media (max-width: 720px) { 
+  .botonderecha, .botoninicio, .botonizquierda { 
+    width: 42px;
+  } 
 }
