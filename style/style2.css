@@ -4,19 +4,37 @@
 	font-weight:bold;
 	font-style:bold;
 }
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 body{
-	background-image:url("../img/fondo1.jpg");
+	background-image:url("../img/fondo3.jpg");
+	background-attachment: fixed;
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:left center;
+	background-position:center;
 	text-align:center;
-	margin:0px;
+	margin:0;
 }
-embed{
-	height:59px;
-	width:20%;
-	opacity:0.7;
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.bloque-marino {
+  background: rgba(4, 16, 26, 0.80);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(110, 175, 205, 0.18);
+  border-radius: 14px;
+  padding: 28px 36px;
+  margin: 50px auto;
+  max-width: 3000px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 a:link{
 	color:white;
@@ -25,18 +43,18 @@ a:visited{
 	color:white;
 }
 .link:hover{
-	color:purple
+	color:#9C0001;
 }
 td,p{
-	color:white
+	color:white;
 }
 .indice,h1,h2{
 	font-family:melted_monster;
 	color:#9C0001;
 }
-
+/*clamp para la adaptación responsive*/
 h1{
-	font-size: 175px;
+	font-size: clamp(42px, 10vw, 175px);
 }
 
 h2{
@@ -70,12 +88,6 @@ h2{
 p,td{
 	font-size:30px;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-*, *::before, *::after { box-sizing: border-box; }
-
 /*  CABECERA  */
 .site-header {
     background-color: rgb(11, 127, 156);
@@ -166,8 +178,10 @@ html {
 	padding-right: 60px;
     padding-left: 60px;
 }
+/*Pequeña tabla de datos imp*/
 .tabdatos {
-
+	text-align: center;
+	margin: 0 auto;
 	border-spacing: 10px;
 	width: 80%;
 	height: 100px;
@@ -179,134 +193,107 @@ html {
 
 .container-info {
 	display: flex;
-	gap: 250px;
+	flex-wrap: wrap;
+	gap: 30px;
 	justify-content: center;
-	align-items: stretch;
-	width: fit-content;
-	margin: 150px auto;
+	width: 100%;
+	max-width: 1100px;
+	margin: 50px auto;
 	transition: 0.5s;
 }
 
 .descrip {
 	flex: 1;
-	box-shadow: 8px 10px 0 #32c1ff;
+	box-shadow: 8px 10px 0 #9C0001;
 }
 /* TIBURON BLANCO */
-.cardt1 {
-	flex: 1;
+.cardt {
+	flex: 1 1 320px;
 	padding: 20px;
-	width: 700px;
-	height: 785px;
+	width: 100%;
+	height: auto;
 	color: #9C0001;
-	background: #3e7fa5;
 	font-size: 18;
 	text-decoration: none;
+	background: rgba(4, 16, 26, 0.80);
+  	backdrop-filter: blur(6px);
+  	border: 1px solid rgba(110, 175, 205, 0.18);
+  	border-radius: 14px;
+  	margin: 50px auto;
+  	max-width: 500px;
+  	box-shadow: 0 10px 30px #9C0001;
 }
-
-/* TIBURON TIGRE */
-.cardt2 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 480px;
-	color: #9C0001;
-	background: #3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+/* Animación para hacer que las tarjetas principales aparezcan suavemente al cargarse la web */
+@keyframes aparecer {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
 }
-
-/* TIBURON SARDA */
-.cardt3 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 700px;
-	color: #9C0001;
-	background: #3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+.scroll {
+	  animation: aparecer linear both;
+      animation-timeline: view();
+      animation-range: entry 10% cover 30%;
 }
-
-/* TIBURON MAKO */
-.cardt4 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 450px;
-	color: #9C0001;
-	background: #3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+/* Shadow para que el texto parezca que gotea sangre*/
+.texto-sangre{
+	text-shadow: 
+    0 2px 1px #b30000, 
+    0 5px 2px #660000,  
+    0 10px 4px #4d0000,  
+    0 16px 6px #2b0000,  
+    2px 2px 5px rgba(0, 0, 0, 0.8); 
 }
-
-/* TIBURON OCEANICO */
-.cardt5 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 650px;
-	color: #9C0001;
-	background: #3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+/*Adaptación responsive*/
+@media (max-width: 950px) {
+  .container-info {
+    flex-direction: column;
+	align-items: center;
+	gap: 25px;
+  }
+  .cardt {
+    max-width: 100%;
+  }
 }
-
-/* TIBURON TORO */
-.cardt6 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 425px;
-	color: #9C0001;
-	background: #3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+@media (max-width: 720px) {
+  body {
+    background-attachment: scroll; 
+  }
+  .site-header-inner {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .tabdatos {
+    display: block;
+    overflow-x: auto;
+  }
+  .tabmordida tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-/* TIBURON MARTILLO GIGANTE */
-.cardt7 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 475px;
-	color: #9C0001;
-	background:#3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+/* Accesibilidad motion reduce*/
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  body {
+    background-attachment: scroll !important;
+  }
+  .scroll {
+    animation: none !important;
+  }
 }
-
-/* TIBURONES PUNTAS NEGRAS */
-.cardt8 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 445px;
-	color: #9C0001;
-	background:#3e7fa5;
-	font-size: 18;
-	text-decoration: none;
-}
-
-/* TIBURON AZUL */
-.cardt9 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 380px;
-	color: #9C0001;
-	background:#3e7fa5;
-	font-size: 18;
-	text-decoration: none;
-}
-
-/* TIBURON GRIS */
-.cardt10 {
-	flex: 1;
-	padding: 20px;
-	width: 700px;
-	height: 385px;
-	color: #9C0001;
-	background:#3e7fa5;
-	font-size: 18;
-	text-decoration: none;
+/*Hover de las tarjetas*/
+.cardt:hover { 
+    transform: translateY(-10px) rotate(-1deg); 
+    border-color: #2b0000; 
+    box-shadow: 8px 16px 0 #9C0001; 
 }
