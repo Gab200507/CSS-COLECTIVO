@@ -35,6 +35,7 @@ h2{
 }
 /* Shadow para que el texto parezca que gotea sangre*/
 .texto-sangre{
+    font-size: 125px;
 	text-shadow: 
     0 2px 1px #b30000, 
     0 5px 2px #660000,  
@@ -51,10 +52,7 @@ b{
     color:white;
 }
 
-table{
-    background-color: rgba(118, 180, 196, 0.362);
-    margin: 0 auto;
-}
+/* FORMULARIO */
 
 fieldset{
     margin-bottom: 20px;
@@ -78,16 +76,6 @@ fieldset{
     width: min(var(--ancho), calc(100% - 88px)); 
     margin-inline: auto; 
 }
-.line 
-{ width: 32px; 
-    height: 3px; 
-    background: currentColor; 
-}
-/*
-.form-section {
-    padding-top: 10px; 
-}
-    */
 
 .form-card {
     background-color: rgba(11, 12, 16, 0.85);
@@ -99,6 +87,9 @@ fieldset{
 
 .form-card fieldset {
     border: none;
+    margin: 0 0 28px;
+    padding: 0;
+    min-width: 0;
     border-top: 1px solid rgba(118, 180, 196, 0.2);
     padding-top: 20px;
     margin-bottom: 25px;
@@ -106,8 +97,10 @@ fieldset{
 
 .form-card legend {
     color: aqua;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    width: 100%;
     padding: 0 10px;
 }
 
@@ -120,9 +113,7 @@ fieldset{
     gap: 40px; 
     align-items: start;
 }
-/*.form-info h2 {
-    font-size: medium;
-}*/
+
 .form-info p {
     color: whitesmoke;
     line-height: 1.8; 
@@ -143,6 +134,87 @@ fieldset{
     font-weight: 800; 
     letter-spacing: .12em; 
 }
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    min-width: 0;
+    color: #f8f8fb;
+    background: var(--fondo-input);
+    border: 1px solid var(--borde-input);
+    padding: 13px 15px;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus {
+    border-color: var(--borde-focus);
+    box-shadow: 0 0 0 3px rgba(56, 220, 231, 0.18);
+}
+
+.form-card select option {
+    background-color: #10111a;
+    color: #f8f8fb;
+}
+
+.form-card input::placeholder,
+.form-card textarea::placeholder {
+    color: #828596;
+}
+
+.form-card select#codigo-pais {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-card input[type="tel"] {
+    display: inline-block;
+    width: calc(100% - 145px);
+}
+
+.form-card label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #e3e3e8;
+    cursor: pointer;
+}
+
+.form-card button, 
+.form-main button {
+    min-height: 50px;
+    padding: 14px 24px;
+    width: 100%;
+    background-color: #38dce7;
+    color: #111;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+    margin-top: 10px;
+}
+
+.form-card button:hover, 
+.form-main button:hover {
+    transform: translateY(-2px);
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+}
+
 /*Adaptación responsive*/ 
 @media (max-width: 720px) { 
 .site-header-inner { 

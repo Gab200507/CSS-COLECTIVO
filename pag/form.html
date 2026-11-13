@@ -41,10 +41,6 @@
 <main class="form-main">
 
     <section class="form-heading container">
-        <p>
-            <span class="line"></span>
-            FORMULARIO
-        </p>
 
         <h1 class="texto-sangre">Conoce <br>tu lado más salvaje</h1>
         <p>Descubre cómo puedes contribuir a la protección de los tiburones y comparte con nosotros tu pasión por el mundo marino.</p>
@@ -95,8 +91,9 @@
                             </select>
                             <input type="tel" id="tel" name="tel" pattern="^[0-9]{9}$" placeholder="600123456" title="Introduce tu número de teléfono local sin el código de país ni espacios"  />
                         </p>
-
-                         <p>Género: <br>
+                        
+                         <p> <label>
+                            Género:  </label> <br>
                             <label><input type="radio" name="genero" id="genero" value="Hombre">Hombre</label><br>
                             <label><input type="radio" name="genero" id="genero" value="Mujer">Mujer</label><br>
                             <label><input type="radio" name="genero" id="genero" value="Otro">Otro</label><br>
@@ -107,18 +104,25 @@
             
                     <fieldset>
                         <legend><b>Tus preferencias</b></legend>
-                            <p><b>¿Cuál es tu tiburón favorito?</b></p>
+                            <p><label>
+                                ¿Cuál es tu tiburón favorito?</label>
+                            </p>
                             <p>
                             <input type="text" id="tiburon" name="tiburon" required minlength="2" maxlength="40" placeholder="Tiburon favorito" />
                             </p>
-                            <p><b>¿Qué te gustaría hacer para ayudar a los tiburones?<br /></b></p>
+                            <p><label>
+                                ¿Qué te gustaría hacer para ayudar a los tiburones?</label>
+                                
+                            </p><br>
                             <p>
                                 <label><input type="checkbox" name="sol[]" value="1"/>Conocer más sobre su conservación</label><br>
                                 <label><input type="checkbox" name="sol[]" value="2"/>Participar en campañas de concienciación</label><br>
                                 <label><input type="checkbox" name="sol[]" value="3"/>Colaborar en iniciativas de protección marina</label><br>
                                 <label><input type="checkbox" name="sol[]" value="4"/>Compartir información para sensibilizar a otras personas</label>
                             </p>
-                            <p><b>¿Te gustaría participar en actividades educativas?</b></p>
+                            <p><label>
+                                ¿Te gustaría participar en actividades educativas?</label>
+                            </p>
                             <p>
                                 <label><input type="radio" name="participar" value="redsocial"/>Sí, me encantaría</label><br>
                                 <label><input type="radio" name="participar" value="web"/>Tal vez</label><br>
@@ -128,16 +132,22 @@
             
                     <fieldset>
                         <legend><b>Tu opinión</b></legend>
-                        <p><b>¿Qué te ha parecido nuestra página web <em>(máx. 500)</em>?</b></p><br>
+                        <p><label>
+                            ¿Qué te ha parecido nuestra página web <em>(máx. 500)</em>?</label>
+                        </p><br>
                             <p>
                                 <textarea id="comentario" name="comentario" rows="6" cols="60" maxlength="500"></textarea>
                             </p>
-                        <p><b>¿Qué has aprendido o qúe te ha sorprendido <em>(máx. 500)</em>?</b></p><br>
+                        <p><label>
+                            ¿Qué has aprendido o qúe te ha sorprendido <em>(máx. 500)</em>?</label>
+                        </p><br>
                             <p>
                                 <textarea id="aprendizaje" name="aprendizaje" rows="6" cols="60" maxlength="500"></textarea>
                             </p>
                     </fieldset>
-        <button>Firmar</button>
+        <button>
+            COMPROBAR Y ENVIAR
+        </button>
                 
     </form>
 
