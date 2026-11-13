@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" type="text/css"/>
+    <link rel="stylesheet" href="../style/style_form.css" type="text/css"/>
+    <title>Formulario</title>
+</head>
+<body>
+
+    <header class="site-header">
+  <div class="site-header-inner container">
+      <span class="brand-tittle">Shark World</span>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+           <li class="nav-item"><a class="nav-main-link" href="../index.html">Inicio</a></li>
+           <li class="nav-item">
+              <div class="nav-dropdown">
+                <button class="nav-desplegable" type="button" aria-haspopup="true">Top 10 tiburones más peligrosos del mundo</button>
+                    <ul class="submenu">
+                      <li><a href="./pag_1_bl.html">Tiburón Blanco</a></li>
+                      <li><a href="./pag_2_Ti.html"">Tiburón Tigre</a></li>
+                      <li><a href="./pag_3_sa.html">Tiburón Sarda</a></li>
+                      <li><a href="./pag_4_mak.html">Tiburón Mako</a></li>
+                      <li><a href="./pag_5_oc.html">Tiburón Oceánico</a></li>
+                      <li><a href="./pag_6_To.html">Tiburón Toro</a></li>
+                      <li><a href="./pag_7_mar.html">Tiburón Martillo</a></li>
+                      <li><a href="./pag_8_PN.html">Tiburón Punta Negra</a></li>
+                      <li><a href="./pag_9_az.html">Tiburón Azul</a></li>
+                      <li><a href="./pag_10_gr.html">Tiburón Gris</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item"><a href="./form.html">Formulario</a></li>
+        </ul>
+      </nav>  
+    </div>    
+</header>
+    <h1>¡Apoya a un tiburón hoy!</h1>
+
+    <p>Actualmente estamos trabajando junto a varias asociaciones para ayudar a la preservación de estos maravillosos animales.</p>
+
+    <p>Te ofrecemos colaborar con nuestros esfuerzos dándonos tu "firma" como corroboración de tu apoyo a esta causa.</p>
+
+    <p>Además, si participas tienes la oportunidad de ser elegido/a para ir a una excursión especial organizada por una de las asociaciones con las que estamos afiliados.</p>
+
+    <p>Solo debes rellenar los siguientes datos:</p>
+
+    <form action="" method="get" autocomplete="on">
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend><b>Petición de firma</b></legend>
+
+                        <h2>
+                            <label for="nombre">Nombre: </label> <br>
+                            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40" placeholder="Nombre">
+                        </h2>
+
+                        <h2>
+                            <label for="apellidos">Apellidos: </label> <br>
+                            <input type="text" id="apellidos" name="apellidos" required minlength="2" maxlength="40" placeholder="Apellidos">
+                        </h2>
+
+                         <h2>
+                            <label for="correo">Correo electrónico: </label> <br>
+                            <input type="email" id="correo" name="correo" required placeholder="correo@correo.com">
+                         </h2>
+
+                         <h2>Género: <br>
+                            <label><input type="radio" name="genero" id="genero" value="Hombre">Hombre</label>
+                            <label><input type="radio" name="genero" id="genero" value="Mujer">Mujer</label>
+                            <label><input type="radio" name="genero" id="genero" value="Otro">Otro</label>
+                         </h2>
+
+                         <button>Firmar</button>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h3>En realidad no estamos asociados con nadie y no podemos cumplir nada de lo antes dicho. Denos su información bajo su propio riesgo.</h3>
+
+
+</body>
+</html>
