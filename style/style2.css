@@ -97,7 +97,7 @@ p,td{
     background-color: rgb(11, 127, 156);
     padding: 20px;
     position: sticky;
-	font-size: 20px;
+	  font-size: 20px;
 }
 
 .site-header-inner {
@@ -131,51 +131,71 @@ p,td{
 }
 /* BOTÓN DESPLEGABLE */
 .nav-desplegable {
-    background: none;
-    border: none;
-    color: aqua;
-    font-size: 16px;
-    cursor: pointer;
+  display: flex; 
+  align-items: center; 
+  gap: 7px; 
+  background: transparent; 
+  border: none; 
+  color: whitesmoke; 
+  font-size: 16px; 
+  font-weight: 700; 
+  cursor: pointer; 
+  padding: 10px 0;
+}
+.nav-desplegable:hover{
+  color: whitesmoke;
 }
 /* SUBMENÚ */
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #082b3a;
-    min-width: 220px;
-    padding: 10px;
-    list-style: none;
+.submenu { 
+  position: absolute; 
+  top: 100%; left: 0; 
+  min-width: 240px; 
+  margin: 0; 
+  padding: 8px; 
+  list-style: none; 
+  background-color: #082b3a;
+  border: 1px solid rgba(110, 175, 205, 0.3); 
+  border-radius: 10px; 
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+  opacity: 0; 
+  visibility: hidden; 
+  transform: translateY(8px); 
+  transition: opacity .2s ease, transform .2s ease, visibility .2s ease; 
+}
+/* DESPLIEGUE AL PASAR EL RATÓN */ 
+.nav-dropdown:hover .submenu, .nav-dropdown:focus-within .submenu {
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+}
+.nav-dropdown:hover .chevron { 
+  transform: translateY(1px) rotate(225deg); 
 }
 /* ENLACES DEL SUBMENÚ */
-.submenu a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-/* MOSTRAR EL SUBMENÚ */
-.nav-dropdown:hover .submenu,
-.nav-dropdown:focus-within .submenu {
-    display: block;
+.submenu a { 
+  display: block; 
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 12px; 
+  font-weight: 700; 
+  border-radius: 6px; 
+  transition: background .2s ease, color .2s ease; 
 }
 .container ul li a{
     display: block;
     padding: 10px;
     text-decoration: none;
     font-weight: 700;
-    color: aqua;
+    color: whitesmoke;
     transition: .1s;
 }
 .container:hover ul li a {
-    color: aqua;
+    color: whitesmoke;
 }
 .container ul li a:hover {
     color: whitesmoke;
-    transform: scale(1.1);
-    background: #9C0001;
-    border: 1px solid #9C0001;
+    background: #9C0001; 
+    border-radius: 6px;
 }
 /* MAIN */
 .main {
