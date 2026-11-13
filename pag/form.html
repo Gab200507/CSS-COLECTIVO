@@ -37,54 +37,116 @@
       </nav>  
     </div>    
 </header>
-    <h1>¡Apoya a un tiburón hoy!</h1>
 
-    <p>Actualmente estamos trabajando junto a varias asociaciones para ayudar a la preservación de estos maravillosos animales.</p>
+<main class="form-main">
 
-    <p>Te ofrecemos colaborar con nuestros esfuerzos dándonos tu "firma" como corroboración de tu apoyo a esta causa.</p>
+    <section class="form-heading container">
+        <p>
+            <span class="line"></span>
+            FORMULARIO
+        </p>
 
-    <p>Además, si participas tienes la oportunidad de ser elegido/a para ir a una excursión especial organizada por una de las asociaciones con las que estamos afiliados.</p>
+        <h1>Conoce <br>tu lado más salvaje</h1>
+        <p>Descubre cómo puedes contribuir a la protección de los tiburones y comparte con nosotros tu pasión por el mundo marino.</p>
+    </section>
+    <section class="section-pad form-section">
+        <div class="container form-layout">
+            <div class="form-info">
+                <h2>LOS TIBURONES <br> NOS NECESITAN</h2>
+                <p>¿Sabías que muchas especies de tiburones se encuentran amenazadas por las actividades humanas como la sobrepesca y el deterioro de sus hábitats?
+                    <br>Por eso, como Shark World, queremos dar mayor visibilidad a esta problemática promoviendo iniciativas que ayuden a proteger a estas especies. 
+                    <br>Actualmente estamos trabajando junto a varias asociaciones para ayudar a la preservación de estos maravillosos animales.
+                    Y tu participación puede hacer la diferencia.
+                </p>
+                <div class="form-menu">
+                    <span>01 - CONÓCENOS</span><span>02 - PARTICIPA</span><span>03 - DÉJANOS TU OPINIÓN</span>
+                </div>
+            </div>
 
-    <p>Solo debes rellenar los siguientes datos:</p>
+        <form action="" method="get" autocomplete="on" class="form-card">
+            <fieldset>
+                        <legend><b>Tus datos personales</b></legend>
 
-    <form action="" method="get" autocomplete="on">
-        <table>
-            <tr>
-                <td>
-                    <fieldset>
-                        <legend><b>Petición de firma</b></legend>
-
-                        <h2>
+                        <p>
                             <label for="nombre">Nombre: </label> <br>
                             <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40" placeholder="Nombre">
-                        </h2>
+                        </p>
 
-                        <h2>
+                        <p>
                             <label for="apellidos">Apellidos: </label> <br>
                             <input type="text" id="apellidos" name="apellidos" required minlength="2" maxlength="40" placeholder="Apellidos">
-                        </h2>
+                        </p>
 
-                         <h2>
+                         <p>
                             <label for="correo">Correo electrónico: </label> <br>
                             <input type="email" id="correo" name="correo" required placeholder="correo@correo.com">
-                         </h2>
+                         </p>
 
-                         <h2>Género: <br>
-                            <label><input type="radio" name="genero" id="genero" value="Hombre">Hombre</label>
-                            <label><input type="radio" name="genero" id="genero" value="Mujer">Mujer</label>
-                            <label><input type="radio" name="genero" id="genero" value="Otro">Otro</label>
-                         </h2>
+                          <p>
+                            <label for="tel">Teléfono:</label><br />
+                            <select id="codigo-pais" name="codigo-pais" required title="Intoduce tu código de área (ej: +34 para España)">
+                                <option value="">--Elige el código--</option>
+                                <option value="+34">España (+34)</option>
+                                <option value="+1">Estados Unidos (+1)</option>
+                                <option value="+593">Ecuador (+593)</option>
+                                <option value="+57">Colombia (+57)</option>
+                                <option value="+58"> Venezuela (+58)</option>
+                                <option value="+52">México (+52)</option>
+                            </select>
+                            <input type="tel" id="tel" name="tel" pattern="^[0-9]{9}$" placeholder="600123456" title="Introduce tu número de teléfono local sin el código de país ni espacios"  />
+                        </p>
 
-                         <button>Firmar</button>
+                         <p>Género: <br>
+                            <label><input type="radio" name="genero" id="genero" value="Hombre">Hombre</label><br>
+                            <label><input type="radio" name="genero" id="genero" value="Mujer">Mujer</label><br>
+                            <label><input type="radio" name="genero" id="genero" value="Otro">Otro</label><br>
+                            <label><input type="radio" name="genero" id="genero" value="Otro">Prefiero no decirlo</label><br>
+                         </p>
 
                     </fieldset>
-                </td>
-            </tr>
-        </table>
+            
+                    <fieldset>
+                        <legend><b>Tus preferencias</b></legend>
+                            <p><b>¿Cuál es tu tiburón favorito?</b></p>
+                            <p>
+                            <input type="text" id="tiburon" name="tiburon" required minlength="2" maxlength="40" placeholder="Tiburon favorito" />
+                            </p>
+                            <p><b>¿Qué te gustaría hacer para ayudar a los tiburones?<br /></b></p>
+                            <p>
+                                <label><input type="checkbox" name="sol[]" value="1"/>Conocer más sobre su conservación</label><br>
+                                <label><input type="checkbox" name="sol[]" value="2"/>Participar en campañas de concienciación</label><br>
+                                <label><input type="checkbox" name="sol[]" value="3"/>Colaborar en iniciativas de protección marina</label><br>
+                                <label><input type="checkbox" name="sol[]" value="4"/>Compartir información para sensibilizar a otras personas</label>
+                            </p>
+                            <p><b>¿Te gustaría participar en actividades educativas?</b></p>
+                            <p>
+                                <label><input type="radio" name="participar" value="redsocial"/>Sí, me encantaría</label><br>
+                                <label><input type="radio" name="participar" value="web"/>Tal vez</label><br>
+                                <label><input type="radio" name="participar" value="blog"/>No por ahora</label><br>
+                            </p>
+                    </fieldset>
+            
+                    <fieldset>
+                        <legend><b>Tu opinión</b></legend>
+                        <p><b>¿Qué te ha parecido nuestra página web <em>(máx. 500)</em>?</b></p><br>
+                            <p>
+                                <textarea id="comentario" name="comentario" rows="6" cols="60" maxlength="500"></textarea>
+                            </p>
+                        <p><b>¿Qué has aprendido o qúe te ha sorprendido <em>(máx. 500)</em>?</b></p><br>
+                            <p>
+                                <textarea id="aprendizaje" name="aprendizaje" rows="6" cols="60" maxlength="500"></textarea>
+                            </p>
+                    </fieldset>
+        <button>Firmar</button>
+                
     </form>
 
-    <h3>En realidad no estamos asociados con nadie y no podemos cumplir nada de lo antes dicho. Denos su información bajo su propio riesgo.</h3>
 
 
+
+        </div>
+    </section>
+
+</main>
 </body>
 </html>
