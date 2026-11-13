@@ -32,6 +32,15 @@ h2{
     padding-top: 5px;
     padding-bottom: 10px;
 }
+/* Shadow para que el texto parezca que gotea sangre*/
+.texto-sangre{
+	text-shadow: 
+    0 2px 1px #b30000, 
+    0 5px 2px #660000,  
+    0 10px 4px #4d0000,  
+    0 16px 6px #2b0000,  
+    2px 2px 5px rgba(0, 0, 0, 0.8); 
+}
 
 h3{
     font-size: 0.5em;
