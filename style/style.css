@@ -4,7 +4,6 @@
 	font-weight:bold;
 	font-style:bold;
 }
-
 body {
 	background-image:url("../img/fondo1.jpg");
 	background-repeat:no-repeat;
@@ -16,10 +15,9 @@ body {
     margin-right: 60px;
     margin-left: 60px;
 }
-
 h1 {
     font-family:melted_monster;
-	font-size:7em;
+	font-size: clamp(36px, 8vw, 100px);
     color:#9C0001;
     text-align:center;
 }
@@ -208,4 +206,46 @@ html {
 	  animation: aparecer linear both;
       animation-timeline: view();
       animation-range: entry 10% cover 30%;
+}
+/*Adaptación responsive*/
+@media (max-width: 720px) { 
+body { 
+    background-attachment: scroll; 
+} 
+.site-header-inner { 
+    flex-direction: column; 
+    gap: 15px; 
+} 
+.nav-list { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+} 
+.main { 
+    margin-right: 15px; 
+    margin-left: 15px; 
+} 
+.menu-container { 
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px; 
+} 
+p { 
+    padding-left: 0;
+    font-size: 1.2em; 
+} 
+}
+/* Accesibilidad motion reduce*/ 
+@media (prefers-reduced-motion: reduce) { 
+    *, *::before, *::after { 
+        animation-duration: 0.01ms !important; 
+        animation-iteration-count: 1 !important; 
+        transition-duration: 0.01ms !important; 
+        scroll-behavior: auto !important; 
+} 
+body { 
+    background-attachment: scroll !important; 
+}
+.scroll { 
+    animation: none !important; 
+} 
 }
