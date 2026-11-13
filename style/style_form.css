@@ -16,6 +16,7 @@ html, body {
     overflow-x: hidden;
 }
 h1{
+    font-size: clamp(32px, 6vw, 60px);
     font-family:melted_monster;
     margin-bottom: 15px;
     text-align: left;
@@ -132,4 +133,38 @@ fieldset{
     font-size: 11px; 
     font-weight: 800; 
     letter-spacing: .12em; 
+}
+/*Adaptación responsive*/ 
+@media (max-width: 720px) { 
+.site-header-inner { 
+    flex-direction: column; 
+    gap: 15px; 
+} 
+.nav-list { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+} 
+.form-layout { 
+    grid-template-columns: 1fr;
+    gap: 20px; 
+} 
+.form-card { 
+    padding: 20px; 
+} 
+textarea { 
+    width: 100%; 
+} 
+} 
+/* Accesibilidad motion reduce*/ 
+@media (prefers-reduced-motion: reduce) { 
+    *, *::before, *::after { 
+        animation-duration: 0.01ms !important; 
+        animation-iteration-count: 1 !important; 
+        transition-duration: 0.01ms !important; 
+        scroll-behavior: auto !important; 
+} 
+body { 
+    background-attachment: scroll !important; 
+} 
 }
