@@ -1,29 +1,34 @@
 @font-face{
-	font-family:'melted_monster','shark';
+	font-family:'melted_monster';
 	src:url(../melted_monster/melted_monster.ttf);
 	font-weight:bold;
 	font-style:bold;
 }
-@font-face {
-    font-family: 'shark';
-    src: url(../style/font/shark/shark___.ttf);
-    font-weight: bold;
-    font-size: bold;
-}
+
 body {
 	background-image:url("../img/fondo1.jpg");
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:left center;
-	text-align:center
+    margin: 0px;
 }
-p,h1 {
-	font-family:melted_monster;
-	color:#9C0001;
-	font-size:4em
+.main {
+    margin-right: 60px;
+    margin-left: 60px;
 }
+
 h1 {
-	font-size:6em
+    font-family:melted_monster;
+	font-size:7em;
+    color:#9C0001;
+    text-align:center;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: white;
+    text-align: left;
+    padding-left: 40px;
 }
 a:link {
 	color:#9C0001
@@ -33,7 +38,7 @@ a:visited {
 }
 .botoerecha {
 	width:10%;
-	float:right
+	float:right;
 }
 a:hover {
 	color:purple
@@ -47,6 +52,7 @@ html {
     background-color: rgb(11, 127, 156);
     padding: 20px;
     position: sticky;
+    font-size: 20px;
 }
 .site-header-inner {
     display: flex;
