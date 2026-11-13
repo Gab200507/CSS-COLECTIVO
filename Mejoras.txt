@@ -1,6 +1,0 @@
--El fondo está ahora ajustado a la pantalla.
--Etiqueta embed más estética.
--Traspaso de todas las propiedades posibles de HTML a CSS.
--Incorporación de @font-face para que no sea necesario tener instalada la fuente para poder verla.
--El link cambia de color al pasar el cursor sobre él.
--Márgenes añadidos para mejorar la estética de la página.
