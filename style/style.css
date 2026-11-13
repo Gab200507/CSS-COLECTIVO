@@ -30,6 +30,10 @@ p {
     text-align: left;
     padding-left: 40px;
 }
+table{
+    margin: 0 auto;
+}
+
 a:link {
 	color:#9C0001
 }
@@ -130,4 +134,36 @@ html {
     transform: scale(1.1);
     background: #9C0001;
     border: 1px solid #9C0001;
+}
+
+.menu-container{
+    display:grid;
+    place-items:center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-item{
+    position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  text-decoration: none;
+
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  /* Recorta la imagen para llenar el cuadrado sin estirarla */
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+  transform: scale(1.05);
 }
