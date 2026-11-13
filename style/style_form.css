@@ -1,20 +1,36 @@
-@font-face {
-    font-family: 'shark';
-    src: url(../font/shark___.ttf);
-    font-weight: bold;
-    font-size: bold;
+@font-face{
+	font-family:'melted_monster';
+	src:url(../melted_monster/melted_monster.ttf);
+	font-weight:bold;
+	font-style:bold;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 h1{
-    font-family: shark;
+    font-family:melted_monster;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 p{
-    font-size: 3em;
+    font-size: 24px;
 }
 
 h2{
-    color: aqua;
+    color: rgb(37, 147, 210);
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 h3{
@@ -26,10 +42,94 @@ b{
 }
 
 table{
-    background-color: rgb(11,127,156);
+    background-color: rgba(118, 180, 196, 0.362);
     margin: 0 auto;
 }
 
 fieldset{
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgba(118, 180, 196, 0.4);
     align-self: center;
+}
+
+.form-main {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.form-heading { 
+    padding-block: 20px 30px; 
+}
+
+.form-heading p { 
+    margin-bottom: 0; 
+}
+.container { 
+    width: min(var(--ancho), calc(100% - 88px)); 
+    margin-inline: auto; 
+}
+.line 
+{ width: 32px; 
+    height: 3px; 
+    background: currentColor; 
+}
+/*
+.form-section {
+    padding-top: 10px; 
+}
+    */
+
+.form-card {
+    background-color: rgba(11, 12, 16, 0.85);
+    border: 1px solid rgba(118, 180, 196, 0.3);
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.form-card fieldset {
+    border: none;
+    border-top: 1px solid rgba(118, 180, 196, 0.2);
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.form-card legend {
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.section-pad {
+    padding: 40px 0; 
+}
+.form-layout {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    align-items: start;
+}
+/*.form-info h2 {
+    font-size: medium;
+}*/
+.form-info p {
+    color: whitesmoke;
+    line-height: 1.8; 
+    max-width: 100%;
+}
+
+.form-menu span {
+    border-top: 1px solid;
+    padding-top: 15px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.form-menu {
+    margin-top: 45px; 
+    display: grid; 
+    gap: 16px; 
+    font-size: 11px; 
+    font-weight: 800; 
+    letter-spacing: .12em; 
 }
